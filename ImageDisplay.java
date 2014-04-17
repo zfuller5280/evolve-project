@@ -11,7 +11,7 @@ public class ImageDisplay extends JFrame{
 	
 	JPanel upperPanel;
 public static void main(String[] args){
-		//JFrame frame=new JFrame("Image Demo");
+		//JFrame frame=new JFrame("The Evolving Project");
 				
 		ImageDisplay img=new ImageDisplay();
 		//frame.add(img);
@@ -22,8 +22,8 @@ public static void main(String[] args){
 	}
 	ImageDisplay()
 	{
-	super("Image Demo");
-	label=new JLabel("Enter name of the Image you want to open");
+	super("The Evolving Project");
+	label=new JLabel("Enter your username");
 	name=new JTextField(15);
 	display=new JButton("Display Image");
 
@@ -44,6 +44,7 @@ public static void main(String[] args){
 	
 	private class DrawPanel extends JPanel implements ActionListener{
 		Image image;
+
 	public void actionPerformed(ActionEvent e)
 	{
 		String text=name.getText().trim();
